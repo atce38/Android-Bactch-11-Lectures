@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroidBactch11</string>
-    <string name="abc">Home Button</string>
+    <string name="abc">Signin</string>
+    <string name="txt">Hassan Afzal</string>
 </resources>
