@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         TextView hassan=findViewById(R.id.txtHassan);
         hassan.setText("New Hassan Afzal");
 
-
     }
     void abc(){
 
