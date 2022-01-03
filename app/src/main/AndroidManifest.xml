@@ -12,11 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBactch11">
         <activity
-            android:name=".Lecture8.HomeActivity"
+            android:name=".Lecture9.StudentDettailActivity"
             android:exported="false" />
         <activity
-            android:name=".Lecture8.LoginActivity"
-            android:exported="true" >
+            android:name=".Lecture9.ListActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,10 +24,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Lecture9.AlertActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Lecture8.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lecture8.LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".Lecture7.LifeCycleActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Lecture6.LinearLayoutActivity"
             android:exported="true" />
