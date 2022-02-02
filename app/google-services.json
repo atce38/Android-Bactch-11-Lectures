@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "943341945096",
+    "project_id": "androidbatch11",
+    "storage_bucket": "androidbatch11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943341945096:android:59f559460e7ca4be18ecbd",
+        "android_client_info": {
+          "package_name": "com.abidingtech.www.androidbactch11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943341945096-r1ppkdt1eqpe8vrurpecgpma92j7i2ft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abidingtech.www.androidbactch11",
+            "certificate_hash": "1596b87b34de81cfbaaa85d9b0bfb4de02d99bac"
+          }
+        },
+        {
+          "client_id": "943341945096-aebn6abnu3cilpsm5unrdr7nk6g9hg0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5OFF7hS_bJRxVEv44AXyI-7ocH35USGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943341945096-aebn6abnu3cilpsm5unrdr7nk6g9hg0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
