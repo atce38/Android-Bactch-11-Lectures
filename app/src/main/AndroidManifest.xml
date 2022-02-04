@@ -14,7 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBactch11">
         <activity
-            android:name=".Lecutre17.FirebaseDatabaseActivity"
+            android:name=".Lecture18.RegisterActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Lecture18.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,13 +28,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Lecture15.SqliteDatabaseActivity"
+            android:name=".Lecutre17.FirebaseDatabaseActivity"
             android:exported="true">
 
         </activity>
         <activity
+            android:name=".Lecture15.SqliteDatabaseActivity"
+            android:exported="true" />
+        <activity
             android:name=".Lecture14.OptionMenuActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Lecture13.SimpleSpinnerActivity"
             android:exported="true" />

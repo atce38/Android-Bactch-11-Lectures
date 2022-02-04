@@ -5,7 +5,7 @@ import com.orm.SugarRecord;
 
 public class Book extends SugarRecord {
      String title;
-     String edition;
+     String edition,key;
 
     public Book() {
     }
@@ -29,5 +29,13 @@ public class Book extends SugarRecord {
 
     public void setEdition(String edition) {
         this.edition = edition;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }
