@@ -14,9 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBactch11">
         <activity
-            android:name=".Lecture22.TabActivity"
-            android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+            android:name=".Lecture23.CUDActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,14 +23,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Lecture21.NavActivity"
+            android:name=".Lecture22.TabActivity"
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
 
         </activity>
         <activity
+            android:name=".Lecture21.NavActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"></activity>
+        <activity
             android:name=".Lecture19.ImageUploadActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Lecture18.RegisterActivity"
             android:exported="true" />
