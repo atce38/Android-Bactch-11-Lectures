@@ -4,6 +4,10 @@
     package="com.abidingtech.www.androidbactch11">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- for Android 6 and above -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name="com.orm.SugarApp"
@@ -14,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBactch11">
         <activity
-            android:name=".Lecture23.CUDActivity"
+            android:name=".Lecture25.WifiActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,15 +27,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Lecture22.TabActivity"
-            android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+            android:name=".Lecture25.NotificationActivity"
+            android:exported="true">
 
         </activity>
         <activity
+            android:name=".Lecture23.CUDActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Lecture22.TabActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
             android:name=".Lecture21.NavActivity"
             android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"></activity>
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
             android:name=".Lecture19.ImageUploadActivity"
             android:exported="true" />
