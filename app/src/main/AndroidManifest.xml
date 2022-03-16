@@ -4,6 +4,7 @@
     package="com.abidingtech.www.androidbactch11">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- for Android 6 and above -->
@@ -18,22 +19,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBactch11">
         <activity
-            android:name=".Lecture25.WifiActivity"
-            android:exported="true" >
+            android:name=".Lecture26.SplashActivity"
+            android:exported="true"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.AndroidBactch11.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".Lecture26.BgService"
+            android:enabled="true"
+            android:exported="true" />
+
         <activity
-            android:name=".Lecture25.NotificationActivity"
+            android:name=".Lecture25.WifiActivity"
             android:exported="true">
 
         </activity>
         <activity
+            android:name=".Lecture25.NotificationActivity"
+            android:exported="true" />
+        <activity
             android:name=".Lecture23.CUDActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Lecture22.TabActivity"
             android:exported="true"

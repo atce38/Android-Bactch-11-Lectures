@@ -6,12 +6,14 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.wifi.ScanResult;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.abidingtech.www.androidbactch11.Lecture26.BgService;
 import com.abidingtech.www.androidbactch11.R;
 import com.thanosfisherman.wifiutils.WifiUtils;
 
@@ -24,6 +26,9 @@ public class WifiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wifi);
 
+//        Intent serviceIntent=new Intent(this, BgService.class);
+//        startService(serviceIntent);
+        startService();
         WifiUtils.withContext(getApplicationContext()).enableWifi(this::getEnabled);
 
         WifiUtils.withContext(getApplicationContext()).scanWifi(this::getWifiResults).start();
@@ -45,7 +50,11 @@ public class WifiActivity extends AppCompatActivity {
         ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},PERMISSION_CODE);
 
     }
-
+    public void startService() {
+        Intent serviceIntent = new Intent(this, BgService.class);
+        serviceIntent.putExtra("inputExtra", "Foreground Service Example in Android");
+        ContextCompat.startForegroundService(this, serviceIntent);
+    }
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
